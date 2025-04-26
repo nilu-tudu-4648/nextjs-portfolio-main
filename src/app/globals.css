@@ -3,25 +3,103 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 14, 14, 14;
+  --background-end-rgb: 18, 18, 18;
+  --primary-color: 37, 99, 235;
+  --secondary-color: 79, 70, 229;
+  --accent-color: 14, 165, 233;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-light-100 bg-dark-300;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl md:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl sm:text-3xl;
+  }
+
+  p {
+    @apply leading-relaxed text-light-300;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-full font-medium transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply btn bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-button hover:shadow-none;
+  }
+
+  .btn-secondary {
+    @apply btn bg-dark-200 text-white border border-dark-100 hover:border-primary-500;
+  }
+
+  .section-container {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+
+  .card {
+    @apply bg-dark-200 rounded-xl shadow-card overflow-hidden transition-all duration-300 hover:shadow-lg;
+  }
+
+  .input-field {
+    @apply bg-dark-200 border border-dark-100 rounded-lg px-4 py-3 text-light-100 w-full focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-200;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dark-100 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-500;
+}
+
+/* Animations */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }

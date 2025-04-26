@@ -1,3 +1,4 @@
+"use client";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
@@ -8,16 +9,26 @@ import AchievementsSection from "./components/AchievementsSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#121212]">
-      <Navbar />
-      <div className="container mt-24 mx-auto px-12 py-4">
-        <HeroSection />
-        <AchievementsSection />
-        <AboutSection />
-        <ProjectsSection />
-        <EmailSection />
+    <main className="flex min-h-screen flex-col bg-dark-300 relative overflow-hidden">
+      {/* Background gradient elements */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
+        <div className="absolute -top-[10%] -left-[10%] w-[500px] h-[500px] bg-primary-500/10 rounded-full blur-[120px]" />
+        <div className="absolute top-[60%] -right-[5%] w-[400px] h-[400px] bg-secondary-500/10 rounded-full blur-[120px]" />
+        <div className="absolute -bottom-[10%] left-[30%] w-[600px] h-[600px] bg-accent-500/10 rounded-full blur-[120px]" />
       </div>
-      <Footer />
+
+      {/* Content */}
+      <div className="relative z-10">
+        <Navbar />
+        <div className="container mt-24 mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <HeroSection />
+          <AchievementsSection />
+          <AboutSection />
+          <ProjectsSection />
+          <EmailSection />
+        </div>
+        <Footer />
+      </div>
     </main>
   );
 }
