@@ -99,10 +99,10 @@ const EmailSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Get In Touch</h2>
-          <div className="w-12 h-1 bg-primary-500 mx-auto mb-6"></div>
-          <p className="text-light-300 max-w-2xl mx-auto">
-            Have a project in mind or want to discuss opportunities? I&apos;d love to hear from you!
+          <h2 className="section-title">Contact Us</h2>
+          <div className="w-16 h-1.5 bg-primary-500 mx-auto mb-6"></div>
+          <p className="section-subtitle">
+            Ready to elevate your small business online? Get in touch for a free consultation and quote!
           </p>
         </motion.div>
 
@@ -116,11 +116,11 @@ const EmailSection = () => {
             className="relative"
           >
             <div className="bg-dark-200/50 backdrop-blur-sm p-8 rounded-2xl shadow-card relative z-10">
-              <h3 className="text-2xl font-bold text-white mb-6">Let&apos;s Connect</h3>
+              <h3 className="text-3xl font-bold text-white mb-6 font-poppins">Let&apos;s Discuss Your Project</h3>
               <p className="text-light-300 mb-8">
-                I&apos;m currently available for freelance work and full-time positions.
-                If you have a project that needs some creative touch or a position that
-                matches my skills, feel free to reach out.
+                WebCraft Studios provides affordable, professional web and mobile development services
+                tailored for small businesses. Whether you need a new website, an online store, or a
+                custom application, we&apos;re here to help you succeed online.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -132,8 +132,8 @@ const EmailSection = () => {
                   </div>
                   <div>
                     <p className="text-sm text-light-300">Email</p>
-                    <a href="mailto:contact@yourname.com" className="text-white hover:text-primary-500 transition-colors">
-                      contact@yourname.com
+                    <a href="mailto:hello@webcraftstudios.com" className="text-white hover:text-primary-500 transition-colors">
+                      hello@webcraftstudios.com
                     </a>
                   </div>
                 </div>
@@ -147,15 +147,15 @@ const EmailSection = () => {
                   </div>
                   <div>
                     <p className="text-sm text-light-300">Location</p>
-                    <p className="text-white">San Francisco, CA</p>
+                    <p className="text-white">Boston, MA</p>
                   </div>
                 </div>
               </div>
 
-              <h4 className="text-white font-medium mb-4">Connect with me</h4>
+              <h4 className="text-white font-medium mb-4">Follow Us</h4>
               <div className="flex gap-4">
                 <Link
-                  href="https://github.com/nilu-tudu-4648"
+                  href="https://github.com/webcraftstudios"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-dark-100 p-3 rounded-full hover:bg-primary-500/20 transition-colors"
@@ -163,7 +163,7 @@ const EmailSection = () => {
                   <Image src={GithubIcon} alt="Github" width={20} height={20} />
                 </Link>
                 <Link
-                  href="https://www.linkedin.com/in/nilu-tudu-a1352b243/"
+                  href="https://www.linkedin.com/company/webcraft-studios"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-dark-100 p-3 rounded-full hover:bg-primary-500/20 transition-colors"
@@ -171,7 +171,7 @@ const EmailSection = () => {
                   <Image src={LinkedinIcon} alt="LinkedIn" width={20} height={20} />
                 </Link>
                 <Link
-                  href="#"
+                  href="https://twitter.com/webcraftstudios"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-dark-100 p-3 rounded-full hover:bg-primary-500/20 transition-colors"
@@ -207,9 +207,9 @@ const EmailSection = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Message Sent!</h3>
-                  <p className="text-light-300 mb-6">
-                    Thank you for reaching out. I&apos;ll get back to you as soon as possible.
+                  <h3 className="text-3xl font-bold text-white mb-3 font-poppins">Message Sent!</h3>
+                  <p className="text-light-300 text-lg mb-8">
+                    Thank you for reaching out. Our team will get back to you within 24 hours.
                   </p>
                   <button
                     onClick={() => setEmailSubmitted(false)}

@@ -7,63 +7,63 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Modern React Portfolio",
-    description: "A sleek, responsive portfolio website built with React and Tailwind CSS.",
+    title: "Bloom Boutique",
+    description: "E-commerce website for a local fashion boutique with online ordering and inventory management.",
     image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/nilu-tudu-4648",
+    tag: ["All", "Web", "E-commerce"],
+    gitUrl: "#",
     previewUrl: "/",
-    tech: ["React", "Tailwind CSS", "Framer Motion"]
+    tech: ["React", "Node.js", "Stripe", "MongoDB"]
   },
   {
     id: 2,
-    title: "Photography Showcase",
-    description: "Professional photography portfolio with advanced image galleries and filtering.",
+    title: "Local Eats Cafe",
+    description: "Restaurant website with online ordering, reservation system, and menu management.",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/nilu-tudu-4648",
+    tag: ["All", "Web", "Food"],
+    gitUrl: "#",
     previewUrl: "/",
-    tech: ["Next.js", "CSS Modules", "Cloudinary"]
+    tech: ["Next.js", "Tailwind CSS", "Sanity CMS"]
   },
   {
     id: 3,
-    title: "E-commerce Platform",
-    description: "Full-featured online store with product management, cart, and checkout functionality.",
+    title: "Wellness Center",
+    description: "Appointment booking system and service showcase for a local wellness and spa center.",
     image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/nilu-tudu-4648",
+    tag: ["All", "Web", "Health"],
+    gitUrl: "#",
     previewUrl: "/",
-    tech: ["React", "Node.js", "MongoDB", "Stripe"]
+    tech: ["React", "Node.js", "PostgreSQL", "Calendly API"]
   },
   {
     id: 4,
-    title: "Food Delivery App",
-    description: "Mobile application for ordering food with real-time tracking and notifications.",
+    title: "Paws & Claws",
+    description: "Pet shop e-commerce platform with subscription service for pet food and supplies.",
     image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/nilu-tudu-4648",
+    tag: ["All", "Web", "E-commerce"],
+    gitUrl: "#",
     previewUrl: "/",
-    tech: ["React Native", "Firebase", "Google Maps API"]
+    tech: ["React", "Firebase", "Stripe", "Redux"]
   },
   {
     id: 5,
-    title: "Firebase Auth Template",
-    description: "Ready-to-use authentication system with user management and role-based access control.",
+    title: "City Plumbing",
+    description: "Service booking website for a local plumbing company with emergency request feature.",
     image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/nilu-tudu-4648",
+    tag: ["All", "Web", "Service"],
+    gitUrl: "#",
     previewUrl: "/",
-    tech: ["React", "Firebase", "Redux"]
+    tech: ["WordPress", "WooCommerce", "Custom PHP"]
   },
   {
     id: 6,
-    title: "Developer Roadmap",
-    description: "Interactive guide for aspiring developers with learning resources and progress tracking.",
+    title: "FreshGrocer",
+    description: "Mobile app for a local grocery store with delivery tracking and loyalty program.",
     image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/nilu-tudu-4648",
+    tag: ["All", "Mobile", "E-commerce"],
+    gitUrl: "#",
     previewUrl: "/",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS"]
+    tech: ["React Native", "Firebase", "Google Maps API"]
   },
 ];
 
@@ -95,10 +95,10 @@ const ProjectsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">My Projects</h2>
-          <div className="w-12 h-1 bg-primary-500 mx-auto mb-6"></div>
-          <p className="text-light-300 max-w-2xl mx-auto">
-            Explore my recent work showcasing my expertise in web and mobile development
+          <h2 className="section-title">Our Client Work</h2>
+          <div className="w-16 h-1.5 bg-primary-500 mx-auto mb-6"></div>
+          <p className="section-subtitle">
+            Explore our recent projects for small businesses across various industries
           </p>
         </motion.div>
 
@@ -117,6 +117,26 @@ const ProjectsSection = () => {
             onClick={handleTagChange}
             name="Mobile"
             isSelected={tag === "Mobile"}
+          />
+          <ProjectTag
+            onClick={handleTagChange}
+            name="E-commerce"
+            isSelected={tag === "E-commerce"}
+          />
+          <ProjectTag
+            onClick={handleTagChange}
+            name="Service"
+            isSelected={tag === "Service"}
+          />
+          <ProjectTag
+            onClick={handleTagChange}
+            name="Food"
+            isSelected={tag === "Food"}
+          />
+          <ProjectTag
+            onClick={handleTagChange}
+            name="Health"
+            isSelected={tag === "Health"}
           />
         </div>
 

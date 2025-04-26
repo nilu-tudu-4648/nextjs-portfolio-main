@@ -1,7 +1,7 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Poppins } from 'next/font/google'
 
-// Load Inter font with specific weights
+// Load Inter font for body text
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
@@ -9,23 +9,31 @@ const inter = Inter({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
 })
 
+// Load Poppins font for headings
+const poppins = Poppins({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-poppins',
+  weight: ['300', '400', '500', '600', '700', '800']
+})
+
 export const metadata = {
-  title: 'Professional Portfolio | Web & Mobile Developer',
-  description: 'Professional portfolio showcasing web and mobile development projects, skills, and experience.',
-  keywords: ['web developer', 'mobile developer', 'portfolio', 'react', 'next.js', 'frontend', 'backend'],
-  authors: [{ name: 'Your Name' }],
-  creator: 'Your Name',
+  title: 'WebCraft Studios | Professional Web & Mobile Development for Small Businesses',
+  description: 'WebCraft Studios provides professional website and mobile app development services tailored for small businesses. Get a stunning online presence that drives results.',
+  keywords: ['web development', 'mobile app development', 'small business websites', 'business web design', 'affordable web development', 'professional web services', 'ecommerce websites', 'responsive design'],
+  authors: [{ name: 'WebCraft Studios' }],
+  creator: 'WebCraft Studios',
   openGraph: {
-    title: 'Professional Portfolio | Web & Mobile Developer',
-    description: 'Professional portfolio showcasing web and mobile development projects, skills, and experience.',
-    url: 'https://your-portfolio-url.com',
-    siteName: 'Developer Portfolio',
+    title: 'WebCraft Studios | Professional Web & Mobile Development for Small Businesses',
+    description: 'WebCraft Studios provides professional website and mobile app development services tailored for small businesses. Get a stunning online presence that drives results.',
+    url: 'https://webcraftstudios.com',
+    siteName: 'WebCraft Studios',
     images: [
       {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Developer Portfolio',
+        alt: 'WebCraft Studios - Web & Mobile Development',
       },
     ],
     locale: 'en_US',
@@ -35,7 +43,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} scroll-smooth`}>
+    <html lang="en" className={`${inter.variable} ${poppins.variable} scroll-smooth`}>
       <body className={`${inter.className} antialiased`}>
         {children}
       </body>

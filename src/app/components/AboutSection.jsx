@@ -6,23 +6,23 @@ import { motion } from "framer-motion";
 
 const TAB_DATA = [
   {
-    title: "Skills",
-    id: "skills",
+    title: "Our Expertise",
+    id: "expertise",
     content: (
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {[
-          { skill: "JavaScript", icon: "💻" },
-          { skill: "React.js", icon: "⚛️" },
-          { skill: "Next.js", icon: "🔄" },
-          { skill: "Node.js", icon: "🟢" },
-          { skill: "Express", icon: "🚂" },
-          { skill: "PostgreSQL", icon: "🐘" },
-          { skill: "MongoDB", icon: "🍃" },
-          { skill: "HTML/CSS", icon: "🎨" },
-          { skill: "Tailwind CSS", icon: "🌊" },
-          { skill: "Git", icon: "🔄" },
-          { skill: "RESTful APIs", icon: "🔌" },
-          { skill: "TypeScript", icon: "📘" },
+          { skill: "Responsive Web Design", icon: "🖥️" },
+          { skill: "E-commerce Development", icon: "🛒" },
+          { skill: "Mobile App Development", icon: "📱" },
+          { skill: "UI/UX Design", icon: "🎨" },
+          { skill: "CMS Integration", icon: "📝" },
+          { skill: "API Development", icon: "🔌" },
+          { skill: "SEO Optimization", icon: "🔍" },
+          { skill: "Performance Tuning", icon: "⚡" },
+          { skill: "Database Design", icon: "🗄️" },
+          { skill: "Cloud Hosting", icon: "☁️" },
+          { skill: "Security Implementation", icon: "🔒" },
+          { skill: "Maintenance & Support", icon: "🔧" },
         ].map((item, index) => (
           <motion.div
             key={index}
@@ -39,22 +39,59 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Education",
-    id: "education",
+    title: "Technologies",
+    id: "technologies",
+    content: (
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        {[
+          { name: "React.js", category: "Frontend" },
+          { name: "Next.js", category: "Frontend" },
+          { name: "Vue.js", category: "Frontend" },
+          { name: "Node.js", category: "Backend" },
+          { name: "Express", category: "Backend" },
+          { name: "Django", category: "Backend" },
+          { name: "MongoDB", category: "Database" },
+          { name: "PostgreSQL", category: "Database" },
+          { name: "Firebase", category: "Cloud" },
+          { name: "AWS", category: "Cloud" },
+          { name: "Tailwind CSS", category: "UI" },
+          { name: "Figma", category: "Design" },
+        ].map((item, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: index * 0.05 }}
+            className="bg-dark-200 p-3 rounded-lg"
+          >
+            <h3 className="text-white font-medium">{item.name}</h3>
+            <p className="text-xs text-primary-400">{item.category}</p>
+          </motion.div>
+        ))}
+      </div>
+    ),
+  },
+  {
+    title: "Our Approach",
+    id: "approach",
     content: (
       <div className="space-y-4">
         {[
           {
-            institution: "Fullstack Academy of Code",
-            degree: "Web Development Bootcamp",
-            years: "2020 - 2021",
-            description: "Intensive full-stack web development program focusing on JavaScript, React, Node.js, and more."
+            title: "Client-Focused Development",
+            description: "We prioritize your business goals and target audience in every decision we make, ensuring the final product aligns perfectly with your vision and objectives."
           },
           {
-            institution: "University of California, Santa Cruz",
-            degree: "Bachelor of Science in Computer Science",
-            years: "2016 - 2020",
-            description: "Focused on software engineering, algorithms, and data structures."
+            title: "Agile Methodology",
+            description: "Our development process is flexible and iterative, allowing for adjustments and improvements throughout the project lifecycle based on your feedback."
+          },
+          {
+            title: "Quality Assurance",
+            description: "We implement rigorous testing procedures to ensure your website or application is bug-free, secure, and performs optimally across all devices and browsers."
+          },
+          {
+            title: "Ongoing Support",
+            description: "Our relationship doesn't end at launch. We provide continuous support and maintenance to keep your digital presence running smoothly and securely."
           }
         ].map((item, index) => (
           <motion.div
@@ -64,53 +101,8 @@ const TAB_DATA = [
             transition={{ duration: 0.3, delay: index * 0.1 }}
             className="bg-dark-200 p-4 rounded-lg"
           >
-            <h3 className="text-lg font-semibold text-white">{item.institution}</h3>
-            <p className="text-primary-400">{item.degree}</p>
-            <p className="text-sm text-light-300">{item.years}</p>
+            <h3 className="text-lg font-semibold text-white">{item.title}</h3>
             <p className="mt-2 text-light-300">{item.description}</p>
-          </motion.div>
-        ))}
-      </div>
-    ),
-  },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <div className="space-y-4">
-        {[
-          {
-            name: "AWS Cloud Practitioner",
-            issuer: "Amazon Web Services",
-            date: "2022",
-            icon: "☁️"
-          },
-          {
-            name: "Google Professional Cloud Developer",
-            issuer: "Google Cloud",
-            date: "2021",
-            icon: "🌩️"
-          },
-          {
-            name: "React Developer Certification",
-            issuer: "Meta",
-            date: "2023",
-            icon: "⚛️"
-          }
-        ].map((item, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: index * 0.1 }}
-            className="bg-dark-200 p-4 rounded-lg flex items-start gap-3"
-          >
-            <div className="text-2xl">{item.icon}</div>
-            <div>
-              <h3 className="text-lg font-semibold text-white">{item.name}</h3>
-              <p className="text-primary-400">{item.issuer}</p>
-              <p className="text-sm text-light-300">{item.date}</p>
-            </div>
           </motion.div>
         ))}
       </div>
@@ -119,7 +111,7 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("expertise");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -138,10 +130,10 @@ const AboutSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">About Me</h2>
-          <div className="w-12 h-1 bg-primary-500 mx-auto mb-6"></div>
-          <p className="text-light-300 max-w-2xl mx-auto">
-            Passionate about creating exceptional digital experiences
+          <h2 className="section-title">About WebCraft Studios</h2>
+          <div className="w-16 h-1.5 bg-primary-500 mx-auto mb-6"></div>
+          <p className="section-subtitle">
+            We&apos;re a team of passionate developers dedicated to helping small businesses succeed online
           </p>
         </motion.div>
 
@@ -179,37 +171,37 @@ const AboutSection = () => {
             viewport={{ once: true }}
             className="text-left"
           >
-            <h3 className="text-2xl font-bold text-white mb-4">Full Stack Developer & UI/UX Enthusiast</h3>
-            <p className="text-light-300 mb-6">
-              I am a passionate full stack developer with expertise in creating modern, responsive web applications.
-              With a strong foundation in JavaScript, React, and Node.js, I build seamless user experiences that combine
-              elegant frontend design with robust backend functionality.
+            <h3 className="text-3xl font-bold text-white mb-5 font-poppins">Your Partner for Digital Success</h3>
+            <p className="text-light-300 text-lg mb-6">
+              WebCraft Studios is a premier web and mobile development company specializing in creating powerful digital solutions
+              for small businesses. We understand the unique challenges that small businesses face in establishing an effective
+              online presence, and we&apos;re here to help you overcome them.
             </p>
-            <p className="text-light-300 mb-8">
-              My approach combines technical excellence with creative problem-solving. I'm dedicated to writing clean,
-              maintainable code and staying current with emerging technologies. Whether working independently or as part
-              of a team, I'm committed to delivering high-quality solutions that exceed expectations.
+            <p className="text-light-300 text-lg mb-8">
+              Founded in 2015, our team combines technical expertise with business acumen to deliver websites and applications
+              that not only look great but also drive real business results. We believe that every small business deserves
+              access to professional, high-quality web development services at affordable prices.
             </p>
 
             {/* Tabs */}
             <div className="flex flex-wrap gap-2 mb-6">
               <TabButton
-                selectTab={() => handleTabChange("skills")}
-                active={tab === "skills"}
+                selectTab={() => handleTabChange("expertise")}
+                active={tab === "expertise"}
               >
-                Skills
+                Our Expertise
               </TabButton>
               <TabButton
-                selectTab={() => handleTabChange("education")}
-                active={tab === "education"}
+                selectTab={() => handleTabChange("technologies")}
+                active={tab === "technologies"}
               >
-                Education
+                Technologies
               </TabButton>
               <TabButton
-                selectTab={() => handleTabChange("certifications")}
-                active={tab === "certifications"}
+                selectTab={() => handleTabChange("approach")}
+                active={tab === "approach"}
               >
-                Certifications
+                Our Approach
               </TabButton>
             </div>
 

@@ -19,8 +19,9 @@ module.exports = {
         'button': '0 4px 14px 0 rgba(0, 118, 255, 0.39)',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        display: ['Inter', 'sans-serif'],
+        sans: ['var(--font-inter)', 'Inter', 'sans-serif'],
+        poppins: ['var(--font-poppins)', 'Poppins', 'sans-serif'],
+        display: ['var(--font-poppins)', 'Poppins', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',

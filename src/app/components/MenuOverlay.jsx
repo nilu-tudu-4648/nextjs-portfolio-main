@@ -28,7 +28,7 @@ const MenuOverlay = ({ links }) => {
             href="#contact"
             className="btn-primary block text-center w-full mt-4"
           >
-            Hire Me
+            Free Consultation
           </Link>
         </motion.li>
       </ul>

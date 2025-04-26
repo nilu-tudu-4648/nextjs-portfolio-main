@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
-import Image from "next/image";
+
 import { motion } from "framer-motion";
 
 const navLinks = [
@@ -13,8 +13,20 @@ const navLinks = [
     path: "#about",
   },
   {
-    title: "Projects",
+    title: "Services",
+    path: "#services",
+  },
+  {
+    title: "Work",
     path: "#projects",
+  },
+  {
+    title: "Process",
+    path: "#process",
+  },
+  {
+    title: "Testimonials",
+    path: "#testimonials",
   },
   {
     title: "Contact",
@@ -57,16 +69,15 @@ const Navbar = () => {
             href={"/"}
             className="relative z-10 flex items-center"
           >
-            <Image
-              src="/images/logo.png"
-              alt="Logo"
-              width={50}
-              height={50}
-              className="rounded-full"
-            />
-            <span className="ml-2 text-xl font-bold text-white hidden sm:block">
-              Portfolio
-            </span>
+            <div className="bg-primary-500 p-2 rounded-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </div>
+            <div className="ml-2 hidden sm:block">
+              <span className="text-xl font-bold text-white block">WebCraft</span>
+              <span className="text-xs text-light-300 block -mt-1">Studios</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -91,7 +102,7 @@ const Navbar = () => {
                   href="#contact"
                   className="btn-primary text-sm py-2 px-4"
                 >
-                  Hire Me
+                  Free Consultation
                 </Link>
               </motion.li>
             </ul>

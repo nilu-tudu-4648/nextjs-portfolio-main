@@ -17,46 +17,50 @@
   }
 
   body {
-    @apply text-light-100 bg-dark-300;
+    @apply text-light-100 bg-dark-300 text-base md:text-lg;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display font-bold tracking-tight;
+    @apply font-poppins font-bold tracking-tight;
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl;
+    @apply text-5xl sm:text-6xl md:text-7xl lg:text-8xl;
   }
 
   h2 {
-    @apply text-3xl sm:text-4xl md:text-5xl;
+    @apply text-4xl sm:text-5xl md:text-6xl;
   }
 
   h3 {
-    @apply text-2xl sm:text-3xl;
+    @apply text-2xl sm:text-3xl md:text-4xl;
+  }
+
+  h4 {
+    @apply text-xl sm:text-2xl md:text-3xl;
   }
 
   p {
-    @apply leading-relaxed text-light-300;
+    @apply leading-relaxed text-light-300 text-base md:text-lg;
   }
 }
 
 @layer components {
   .btn {
-    @apply px-6 py-3 rounded-full font-medium transition-all duration-300;
+    @apply px-7 py-4 rounded-full font-medium transition-all duration-300 text-base md:text-lg;
   }
 
   .btn-primary {
-    @apply btn bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-button hover:shadow-none;
+    @apply btn bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-button hover:shadow-none font-poppins;
   }
 
   .btn-secondary {
-    @apply btn bg-dark-200 text-white border border-dark-100 hover:border-primary-500;
+    @apply btn bg-dark-200 text-white border border-dark-100 hover:border-primary-500 font-poppins;
   }
 
   .section-container {
-    @apply container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28;
   }
 
   .card {
@@ -64,7 +68,15 @@
   }
 
   .input-field {
-    @apply bg-dark-200 border border-dark-100 rounded-lg px-4 py-3 text-light-100 w-full focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300;
+    @apply bg-dark-200 border border-dark-100 rounded-lg px-5 py-4 text-light-100 w-full focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all duration-300 text-base;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold text-white mb-6 font-poppins;
+  }
+
+  .section-subtitle {
+    @apply text-light-300 text-lg md:text-xl max-w-3xl mx-auto mb-12;
   }
 }
 

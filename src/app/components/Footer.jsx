@@ -20,14 +20,17 @@ const Footer = () => {
                 height={40}
                 className="rounded-full"
               />
-              <span className="ml-2 text-xl font-bold text-white">Portfolio</span>
+              <div className="ml-2">
+                <span className="text-xl font-bold text-white block">WebCraft</span>
+                <span className="text-xs text-light-300 block -mt-1">Studios</span>
+              </div>
             </Link>
             <p className="text-light-300 text-sm mb-4">
-              Creating modern, responsive websites and applications with cutting-edge technologies.
+              Helping small businesses succeed online with professional web and mobile development services at affordable prices.
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://github.com/nilu-tudu-4648"
+                href="https://github.com/webcraftstudios"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-light-300 hover:text-primary-500 transition-colors"
@@ -37,7 +40,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/in/nilu-tudu-a1352b243/"
+                href="https://www.linkedin.com/company/webcraft-studios"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-light-300 hover:text-primary-500 transition-colors"
@@ -47,7 +50,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://twitter.com/webcraftstudios"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-light-300 hover:text-primary-500 transition-colors"
@@ -127,7 +130,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-dark-200 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-light-300 text-sm mb-4 md:mb-0">
-            © {currentYear} Your Name. All rights reserved.
+            © {currentYear} WebCraft Studios. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <Link href="#" className="text-light-300 hover:text-primary-500 transition-colors text-sm">
