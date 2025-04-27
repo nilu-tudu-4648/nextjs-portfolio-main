@@ -105,7 +105,7 @@ const TestimonialsSection = () => {
                     ))}
                   </div>
                   <blockquote className="text-light-300 italic mb-5 text-xl md:text-2xl font-light">
-                    "{testimonials[activeIndex].content}"
+                    &ldquo;{testimonials[activeIndex].content}&rdquo;
                   </blockquote>
                   <div>
                     <h4 className="text-white font-bold text-lg md:text-xl">{testimonials[activeIndex].name}</h4>
