@@ -16,6 +16,7 @@ A professional business portfolio website for WebCraft Studios, a company that p
 1. Clone the repository
 2. Navigate to the project directory
 3. Install the dependencies: `npm install`
+4. Copy `.env.local.example` to `.env.local` and add your Resend API key
 
 ## Usage
 
@@ -43,9 +44,29 @@ This website is deployed on Vercel. Follow these steps to deploy your own instan
 2. Sign up for a [Vercel account](https://vercel.com/signup)
 3. Click on "Import Project" and select your repository
 4. Configure your project settings (or use the defaults)
-5. Click "Deploy"
+5. Add the following environment variables:
+   - `RESEND_API_KEY`: Your Resend API key (get it from [resend.com](https://resend.com))
+   - `FROM_EMAIL`: The email address to use as the sender (e.g., hello@webcraftstudios.com)
+6. Click "Deploy"
 
 Vercel will automatically build and deploy your website, and provide you with a URL to access it.
+
+### Using Vercel CLI
+
+You can also deploy directly from your command line:
+
+```bash
+# Install Vercel CLI
+npm install -g vercel
+
+# Login to Vercel
+vercel login
+
+# Deploy from your project directory
+vercel
+```
+
+Follow the prompts to set up your project and add the required environment variables.
 
 ## License
 
