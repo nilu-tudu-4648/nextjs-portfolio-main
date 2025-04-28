@@ -1,19 +1,37 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-// Check if API key exists, otherwise use a placeholder for development
-const resendApiKey = process.env.RESEND_API_KEY || "re_placeholder_key";
-const resend = new Resend(resendApiKey);
+// Create a dummy Resend instance for build time
+// This prevents build errors when environment variables are not available
+let resend;
+let fromEmail;
 
-// Default from email if environment variable is not set
-const fromEmail = process.env.FROM_EMAIL || "hello@webcraftstudios.com";
+// Only initialize with real values at runtime, not during build
+if (typeof window === 'undefined') {
+  // Server-side code
+  try {
+    // Use a placeholder during build time
+    const apiKey = process.env.RESEND_API_KEY || "re_placeholder_for_build";
+    resend = new Resend(apiKey);
+    fromEmail = process.env.FROM_EMAIL || "hello@webcraftstudios.com";
+  } catch (error) {
+    console.warn("Failed to initialize Resend:", error);
+    // Provide fallbacks to prevent build failures
+    resend = {
+      emails: {
+        send: async () => ({ id: "build-time-placeholder", message: "No email sent during build" })
+      }
+    };
+    fromEmail = "build-time@example.com";
+  }
+}
 
-export async function POST(req, res) {
+export async function POST(req) {
   try {
     // Parse the request body
     const { email, subject, message } = await req.json();
     console.log("Form submission:", email, subject);
-
+    
     // Check if required fields are present
     if (!email || !subject || !message) {
       return NextResponse.json(
@@ -21,19 +39,18 @@ export async function POST(req, res) {
         { status: 400 }
       );
     }
-
-    // Check if API key is properly set
-    if (resendApiKey === "re_placeholder_key") {
-      console.warn("Using placeholder Resend API key. Emails will not be sent.");
-      // Return success response in development to allow testing without API key
+    
+    // Check if we're in a real runtime environment with proper API key
+    if (!process.env.RESEND_API_KEY) {
+      console.warn("Missing Resend API key. Emails will not be sent.");
       return NextResponse.json(
-        {
-          id: "dev-mode-no-email-sent",
-          message: "Development mode: No email sent"
+        { 
+          id: "missing-api-key",
+          message: "Email sending is disabled: Missing API key" 
         }
       );
     }
-
+    
     // Send the email
     const data = await resend.emails.send({
       from: fromEmail,
@@ -50,7 +67,7 @@ export async function POST(req, res) {
         </>
       ),
     });
-
+    
     return NextResponse.json(data);
   } catch (error) {
     console.error("Error sending email:", error);
