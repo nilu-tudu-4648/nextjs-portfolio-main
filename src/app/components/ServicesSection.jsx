@@ -94,18 +94,18 @@ const ServicesSection = () => {
               viewport={{ once: true }}
               className="bg-dark-200/50 backdrop-blur-sm rounded-xl p-6 shadow-card hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px]"
             >
-              <div className="bg-dark-100/50 p-4 rounded-lg w-20 h-20 flex items-center justify-center mb-6">
+              <div className="bg-dark-100/50 p-3 sm:p-4 rounded-lg w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center mb-4 sm:mb-6">
                 {service.icon}
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4 font-poppins">{service.title}</h3>
-              <p className="text-light-300 text-base md:text-lg mb-6">{service.description}</p>
+              <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4 font-poppins">{service.title}</h3>
+              <p className="text-light-300 text-sm sm:text-base md:text-lg mb-4 sm:mb-6">{service.description}</p>
               <div className="space-y-2">
                 {service.features.map((feature, idx) => (
                   <div key={idx} className="flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-primary-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-base text-light-300">{feature}</span>
+                    <span className="text-xs sm:text-sm md:text-base text-light-300">{feature}</span>
                   </div>
                 ))}
               </div>

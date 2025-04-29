@@ -95,19 +95,19 @@ const ProcessSection = () => {
               className="bg-dark-200/50 backdrop-blur-sm rounded-xl p-6 shadow-card relative overflow-hidden"
             >
               {/* Step number watermark */}
-              <div className="absolute -right-4 -top-4 text-9xl font-bold text-primary-500/10 font-poppins">
+              <div className="absolute -right-4 -top-4 text-7xl sm:text-8xl md:text-9xl font-bold text-primary-500/10 font-poppins">
                 {step.number}
               </div>
 
               <div className="relative z-10">
-                <div className="bg-dark-100/50 p-4 rounded-lg w-16 h-16 flex items-center justify-center mb-6">
+                <div className="bg-dark-100/50 p-3 sm:p-4 rounded-lg w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center mb-4 sm:mb-6">
                   {step.icon}
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4 flex items-center gap-2 font-poppins">
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4 flex items-center gap-2 font-poppins">
                   <span className="text-primary-500">{step.number}</span>
                   <span>{step.title}</span>
                 </h3>
-                <p className="text-light-300 text-base md:text-lg">{step.description}</p>
+                <p className="text-light-300 text-sm sm:text-base md:text-lg">{step.description}</p>
               </div>
             </motion.div>
           ))}

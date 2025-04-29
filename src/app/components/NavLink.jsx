@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-const NavLink = ({ href, title }) => {
+const NavLink = ({ href, title, onClick }) => {
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
@@ -29,7 +29,8 @@ const NavLink = ({ href, title }) => {
   return (
     <Link
       href={href}
-      className={`relative py-2 px-1 text-base font-medium transition-colors duration-300 ${
+      onClick={onClick}
+      className={`relative py-2 px-1 text-base md:text-sm lg:text-base font-medium transition-colors duration-300 ${
         isActive ? "text-white" : "text-light-300 hover:text-white"
       }`}
     >

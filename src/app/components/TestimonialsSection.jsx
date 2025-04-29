@@ -104,12 +104,12 @@ const TestimonialsSection = () => {
                       </svg>
                     ))}
                   </div>
-                  <blockquote className="text-light-300 italic mb-5 text-xl md:text-2xl font-light">
+                  <blockquote className="text-light-300 italic mb-4 sm:mb-5 text-lg sm:text-xl md:text-2xl font-light">
                     &ldquo;{testimonials[activeIndex].content}&rdquo;
                   </blockquote>
                   <div>
-                    <h4 className="text-white font-bold text-lg md:text-xl">{testimonials[activeIndex].name}</h4>
-                    <p className="text-primary-400 text-base">{testimonials[activeIndex].position}</p>
+                    <h4 className="text-white font-bold text-base sm:text-lg md:text-xl">{testimonials[activeIndex].name}</h4>
+                    <p className="text-primary-400 text-sm sm:text-base">{testimonials[activeIndex].position}</p>
                   </div>
                 </div>
               </div>
@@ -118,19 +118,19 @@ const TestimonialsSection = () => {
             {/* Navigation buttons */}
             <button
               onClick={prevTestimonial}
-              className="absolute top-1/2 -left-4 md:-left-12 transform -translate-y-1/2 bg-dark-100 p-3 rounded-full text-white hover:bg-primary-500 transition-colors"
+              className="absolute top-1/2 left-0 sm:-left-4 md:-left-12 transform -translate-y-1/2 bg-dark-100/80 backdrop-blur-sm p-2 sm:p-3 rounded-full text-white hover:bg-primary-500 transition-colors shadow-lg z-10"
               aria-label="Previous testimonial"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
             <button
               onClick={nextTestimonial}
-              className="absolute top-1/2 -right-4 md:-right-12 transform -translate-y-1/2 bg-dark-100 p-3 rounded-full text-white hover:bg-primary-500 transition-colors"
+              className="absolute top-1/2 right-0 sm:-right-4 md:-right-12 transform -translate-y-1/2 bg-dark-100/80 backdrop-blur-sm p-2 sm:p-3 rounded-full text-white hover:bg-primary-500 transition-colors shadow-lg z-10"
               aria-label="Next testimonial"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>

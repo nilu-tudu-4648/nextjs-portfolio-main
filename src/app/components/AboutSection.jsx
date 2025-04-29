@@ -9,7 +9,7 @@ const TAB_DATA = [
     title: "Our Expertise",
     id: "expertise",
     content: (
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {[
           { skill: "Responsive Web Design", icon: "🖥️" },
           { skill: "E-commerce Development", icon: "🛒" },
@@ -32,7 +32,7 @@ const TAB_DATA = [
             className="bg-dark-200 p-3 rounded-lg flex items-center gap-2"
           >
             <span className="text-xl">{item.icon}</span>
-            <span>{item.skill}</span>
+            <span className="text-sm sm:text-base">{item.skill}</span>
           </motion.div>
         ))}
       </div>
@@ -42,7 +42,7 @@ const TAB_DATA = [
     title: "Technologies",
     id: "technologies",
     content: (
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {[
           { name: "React.js", category: "Frontend" },
           { name: "Next.js", category: "Frontend" },
@@ -64,8 +64,8 @@ const TAB_DATA = [
             transition={{ duration: 0.3, delay: index * 0.05 }}
             className="bg-dark-200 p-3 rounded-lg"
           >
-            <h3 className="text-white font-medium">{item.name}</h3>
-            <p className="text-xs text-primary-400">{item.category}</p>
+            <h3 className="text-white font-medium text-sm sm:text-base">{item.name}</h3>
+            <p className="text-xs sm:text-sm text-primary-400">{item.category}</p>
           </motion.div>
         ))}
       </div>
@@ -206,7 +206,7 @@ const AboutSection = () => {
             </div>
 
             {/* Tab Content */}
-            <div className="mt-6 bg-dark-200/50 backdrop-blur-sm p-6 rounded-xl">
+            <div className="mt-6 bg-dark-200/50 backdrop-blur-sm p-4 sm:p-6 rounded-xl overflow-x-hidden">
               {TAB_DATA.find((t) => t.id === tab).content}
             </div>
           </motion.div>

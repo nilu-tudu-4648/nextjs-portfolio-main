@@ -24,11 +24,11 @@ const HeroSection = () => {
             <h2 className="text-primary-500 font-bold text-xl md:text-2xl mb-3">
               Professional Web & Mobile Development
             </h2>
-            <h1 className="text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-8 font-poppins">
+            <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-8 font-poppins">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-accent-400">
                 Elevate Your Small Business with
               </span>
-              <br />
+              <br className="hidden sm:block" />
               <TypeAnimation
                 sequence={[
                   "Custom Websites",
@@ -97,19 +97,19 @@ const HeroSection = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-light-300 text-xs">Affordable Pricing</span>
+                <span className="text-light-300 text-xs sm:text-sm">Affordable Pricing</span>
               </div>
               <div className="bg-dark-200/80 backdrop-blur-sm px-3 py-2 rounded-full flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-light-300 text-xs">Fast Turnaround</span>
+                <span className="text-light-300 text-xs sm:text-sm">Fast Turnaround</span>
               </div>
               <div className="bg-dark-200/80 backdrop-blur-sm px-3 py-2 rounded-full flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-light-300 text-xs">Ongoing Support</span>
+                <span className="text-light-300 text-xs sm:text-sm">Ongoing Support</span>
               </div>
             </div>
           </motion.div>
@@ -170,11 +170,11 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
-              className="absolute -bottom-6 -left-10 bg-dark-200 p-3 rounded-lg shadow-lg"
+              className="absolute -bottom-6 left-0 sm:-left-10 bg-dark-200 p-2 sm:p-3 rounded-lg shadow-lg z-30"
             >
               <div className="flex items-center gap-2">
                 <div className="bg-primary-500 h-3 w-3 rounded-full"></div>
-                <span className="text-white font-medium">Responsive</span>
+                <span className="text-white text-sm font-medium">Responsive</span>
               </div>
             </motion.div>
 
@@ -182,11 +182,11 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.7 }}
-              className="absolute -top-6 -right-6 bg-dark-200 p-3 rounded-lg shadow-lg"
+              className="absolute -top-6 right-0 sm:-right-6 bg-dark-200 p-2 sm:p-3 rounded-lg shadow-lg z-30"
             >
               <div className="flex items-center gap-2">
                 <div className="bg-accent-500 h-3 w-3 rounded-full"></div>
-                <span className="text-white font-medium">Modern Design</span>
+                <span className="text-white text-sm font-medium">Modern Design</span>
               </div>
             </motion.div>
           </div>

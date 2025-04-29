@@ -106,7 +106,7 @@ const EmailSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -115,7 +115,7 @@ const EmailSection = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="bg-dark-200/50 backdrop-blur-sm p-8 rounded-2xl shadow-card relative z-10">
+            <div className="bg-dark-200/50 backdrop-blur-sm p-5 sm:p-8 rounded-2xl shadow-card relative z-10">
               <h3 className="text-3xl font-bold text-white mb-6 font-poppins">Let&apos;s Discuss Your Project</h3>
               <p className="text-light-300 mb-8">
                 WebCraft Studios provides affordable, professional web and mobile development services
@@ -195,7 +195,7 @@ const EmailSection = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <div className="bg-dark-200/50 backdrop-blur-sm p-8 rounded-2xl shadow-card">
+            <div className="bg-dark-200/50 backdrop-blur-sm p-5 sm:p-8 rounded-2xl shadow-card">
               {emailSubmitted ? (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}

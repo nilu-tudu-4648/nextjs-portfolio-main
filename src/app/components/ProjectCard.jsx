@@ -54,8 +54,8 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, tech = []
 
       {/* Project Info */}
       <div className="flex-1 flex flex-col p-6 bg-dark-200">
-        <h3 className="text-2xl font-bold text-white mb-3 font-poppins">{title}</h3>
-        <p className="text-light-300 text-base mb-5 flex-grow">{description}</p>
+        <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-3 font-poppins line-clamp-2">{title}</h3>
+        <p className="text-light-300 text-sm sm:text-base mb-4 sm:mb-5 flex-grow line-clamp-3">{description}</p>
 
         {/* Tech Stack */}
         {tech.length > 0 && (
@@ -64,7 +64,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, tech = []
               {tech.map((item, index) => (
                 <span
                   key={index}
-                  className="text-sm bg-dark-100 text-primary-400 px-3 py-1.5 rounded-full"
+                  className="text-xs sm:text-sm bg-dark-100 text-primary-400 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full"
                 >
                   {item}
                 </span>

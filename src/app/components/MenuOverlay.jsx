@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const MenuOverlay = ({ links }) => {
   return (
-    <div className="p-6">
+    <div className="p-6 pb-8">
       <ul className="flex flex-col space-y-6 items-center">
         {links.map((link, index) => (
           <motion.li
@@ -15,7 +15,7 @@ const MenuOverlay = ({ links }) => {
             transition={{ duration: 0.3, delay: index * 0.1 }}
             className="w-full text-center"
           >
-            <NavLink href={link.path} title={link.title} />
+            <NavLink href={link.path} title={link.title} onClick={() => document.querySelector('button[aria-label="Toggle menu"]').click()} />
           </motion.li>
         ))}
         <motion.li
@@ -26,7 +26,8 @@ const MenuOverlay = ({ links }) => {
         >
           <Link
             href="#contact"
-            className="btn-primary block text-center w-full mt-4"
+            className="btn-primary block text-center w-full mt-6 py-3"
+            onClick={() => document.querySelector('button[aria-label="Toggle menu"]').click()}
           >
             Free Consultation
           </Link>

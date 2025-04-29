@@ -9,9 +9,9 @@ const Footer = () => {
   return (
     <footer className="bg-dark-300 border-t border-dark-200 pt-12 pb-8 relative z-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-8">
           {/* Logo and Description */}
-          <div className="col-span-1 md:col-span-1">
+          <div className="col-span-2 sm:col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center mb-4">
               <Image
                 src="/images/logo.png"
@@ -108,7 +108,7 @@ const Footer = () => {
                 <svg className="w-5 h-5 text-primary-500 mr-2 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <span>contact@yourname.com</span>
+                <span>hello@webcraftstudios.com</span>
               </li>
               <li className="text-light-300 text-sm flex items-start">
                 <svg className="w-5 h-5 text-primary-500 mr-2 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -121,7 +121,7 @@ const Footer = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span>San Francisco, CA</span>
+                <span>Boston, MA</span>
               </li>
             </ul>
           </div>
