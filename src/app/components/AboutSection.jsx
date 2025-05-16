@@ -130,7 +130,7 @@ const AboutSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="section-title">About WebCraft Studios</h2>
+          <h2 className="section-title">About WebUmul Studios</h2>
           <div className="w-16 h-1.5 bg-primary-500 mx-auto mb-6"></div>
           <p className="section-subtitle">
             We&apos;re a team of passionate developers dedicated to helping small businesses succeed online
@@ -173,12 +173,12 @@ const AboutSection = () => {
           >
             <h3 className="text-3xl font-bold text-white mb-5 font-poppins">Your Partner for Digital Success</h3>
             <p className="text-light-300 text-lg mb-6">
-              WebCraft Studios is a premier web and mobile development company specializing in creating powerful digital solutions
+              WebUmul Studios is a premier web and mobile development company specializing in creating powerful digital solutions
               for small businesses. We understand the unique challenges that small businesses face in establishing an effective
               online presence, and we&apos;re here to help you overcome them.
             </p>
             <p className="text-light-300 text-lg mb-8">
-              Founded in 2015, our team combines technical expertise with business acumen to deliver websites and applications
+              Founded in 2025, our team combines technical expertise with business acumen to deliver websites and applications
               that not only look great but also drive real business results. We believe that every small business deserves
               access to professional, high-quality web development services at affordable prices.
             </p>

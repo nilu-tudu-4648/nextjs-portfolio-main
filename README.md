@@ -1,6 +1,6 @@
-# WebCraft Studios - Professional Web & Mobile Development
+# WebUmul Studios - Professional Web & Mobile Development
 
-A professional business portfolio website for WebCraft Studios, a company that provides website and app development services to small businesses.
+A professional business portfolio website for WebUmul Studios, a company that provides website and app development services to small businesses.
 
 ## Features
 

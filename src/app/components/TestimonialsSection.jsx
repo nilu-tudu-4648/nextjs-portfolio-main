@@ -7,35 +7,35 @@ const testimonials = [
     name: "Sarah Johnson",
     position: "Owner, Bloom Boutique",
     image: "/images/testimonials/testimonial-1.jpg",
-    content: "WebCraft Studios transformed our online presence completely. Our new website has increased our online sales by 40% in just two months. Their team was professional, responsive, and delivered exactly what we needed.",
+    content: "WebUmul Studios transformed our online presence completely. Our new website has increased our online sales by 40% in just two months. Their team was professional, responsive, and delivered exactly what we needed.",
     rating: 5
   },
   {
     name: "Michael Rodriguez",
     position: "CEO, Local Eats Cafe",
     image: "/images/testimonials/testimonial-2.jpg",
-    content: "Working with WebCraft was a game-changer for our restaurant. They created a beautiful website with online ordering capabilities that has significantly increased our takeout business. Highly recommended!",
+    content: "Working with WebUmul was a game-changer for our restaurant. They created a beautiful website with online ordering capabilities that has significantly increased our takeout business. Highly recommended!",
     rating: 5
   },
   {
     name: "Jennifer Lee",
     position: "Founder, Wellness Center",
     image: "/images/testimonials/testimonial-3.jpg",
-    content: "I'm extremely impressed with the website WebCraft Studios created for my wellness center. It perfectly captures our brand essence and has helped us attract new clients. The booking system they integrated works flawlessly.",
+    content: "I'm extremely impressed with the website WebUmul Studios created for my wellness center. It perfectly captures our brand essence and has helped us attract new clients. The booking system they integrated works flawlessly.",
     rating: 5
   },
   {
     name: "David Wilson",
     position: "Director, Wilson Accounting",
     image: "/images/testimonials/testimonial-4.jpg",
-    content: "As a small accounting firm, we needed a professional website that would build trust with potential clients. WebCraft delivered exactly that, plus they made the whole process easy and stress-free.",
+    content: "As a small accounting firm, we needed a professional website that would build trust with potential clients. WebUmul delivered exactly that, plus they made the whole process easy and stress-free.",
     rating: 4
   },
   {
     name: "Amanda Parker",
     position: "Owner, Paws & Claws Pet Shop",
     image: "/images/testimonials/testimonial-5.jpg",
-    content: "Our e-commerce website has been a huge success! WebCraft Studios created an intuitive, attractive online store that our customers love. Their ongoing support has been exceptional as well.",
+    content: "Our e-commerce website has been a huge success! WebUmul Studios created an intuitive, attractive online store that our customers love. Their ongoing support has been exceptional as well.",
     rating: 5
   }
 ];

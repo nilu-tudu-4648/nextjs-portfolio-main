@@ -18,22 +18,22 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  title: 'WebCraft Studios | Professional Web & Mobile Development for Small Businesses',
-  description: 'WebCraft Studios provides professional website and mobile app development services tailored for small businesses. Get a stunning online presence that drives results.',
+  title: 'WebUmul Studios | Professional Web & Mobile Development for Small Businesses',
+  description: 'WebUmul Studios provides professional website and mobile app development services tailored for small businesses. Get a stunning online presence that drives results.',
   keywords: ['web development', 'mobile app development', 'small business websites', 'business web design', 'affordable web development', 'professional web services', 'ecommerce websites', 'responsive design'],
-  authors: [{ name: 'WebCraft Studios' }],
-  creator: 'WebCraft Studios',
+  authors: [{ name: 'WebUmul Studios' }],
+  creator: 'WebUmul Studios',
   openGraph: {
-    title: 'WebCraft Studios | Professional Web & Mobile Development for Small Businesses',
-    description: 'WebCraft Studios provides professional website and mobile app development services tailored for small businesses. Get a stunning online presence that drives results.',
+    title: 'WebUmul Studios | Professional Web & Mobile Development for Small Businesses',
+    description: 'WebUmul Studios provides professional website and mobile app development services tailored for small businesses. Get a stunning online presence that drives results.',
     url: 'https://webcraftstudios.com',
-    siteName: 'WebCraft Studios',
+    siteName: 'WebUmul Studios',
     images: [
       {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'WebCraft Studios - Web & Mobile Development',
+        alt: 'WebUmul Studios - Web & Mobile Development',
       },
     ],
     locale: 'en_US',

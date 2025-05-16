@@ -75,6 +75,16 @@ const projectsData = [
     previewUrl: "https://play.google.com/store/search?q=inland+world+logistics+pvt+ltd&c=apps",
     tech: ["React Native", "Node.js", "Firebase"]
   },
+  {
+    id: 8,
+    title: "Renthunt",
+    description: "Renthunt is a user-friendly app designed for room renting.",
+    image: "/images/projects/8.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/nilesh98/johar11",
+    previewUrl: "https://www.renthunt.in/",
+    tech: ["React", "Node.js", "Firebase"]
+  },
 ];
 
 const ProjectsSection = () => {

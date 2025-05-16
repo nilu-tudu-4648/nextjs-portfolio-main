@@ -52,7 +52,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-light-300 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-10"
           >
-            WebCraft Studios specializes in creating affordable, high-impact websites and mobile applications
+            WebUmul Studios specializes in creating affordable, high-impact websites and mobile applications
             for small businesses. Our tailored solutions help you stand out from competitors, attract more customers,
             and grow your business online.
           </motion.p>

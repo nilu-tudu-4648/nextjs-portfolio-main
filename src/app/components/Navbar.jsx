@@ -75,7 +75,7 @@ const Navbar = () => {
               </svg>
             </div>
             <div className="ml-2 hidden sm:block">
-              <span className="text-xl font-bold text-white block">WebCraft</span>
+              <span className="text-xl font-bold text-white block">WebUmul</span>
               <span className="text-xs text-light-300 block -mt-1">Studios</span>
             </div>
           </Link>

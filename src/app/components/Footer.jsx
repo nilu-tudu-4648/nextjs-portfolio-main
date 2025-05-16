@@ -21,14 +21,14 @@ const Footer = () => {
                 className="rounded-full"
               />
               <div className="ml-2">
-                <span className="text-xl font-bold text-white block">WebCraft</span>
+                <span className="text-xl font-bold text-white block">WebUmul</span>
                 <span className="text-xs text-light-300 block -mt-1">Studios</span>
               </div>
             </Link>
             <p className="text-light-300 text-sm mb-4">
               Helping small businesses succeed online with professional web and mobile development services at affordable prices.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a
                 href="https://github.com/webcraftstudios"
                 target="_blank"
@@ -59,7 +59,7 @@ const Footer = () => {
                   <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.054 10.054 0 01-3.127 1.184 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path>
                 </svg>
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -130,7 +130,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-dark-200 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-light-300 text-sm mb-4 md:mb-0">
-            © {currentYear} WebCraft Studios. All rights reserved.
+            © {currentYear} WebUmul Studios. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <Link href="#" className="text-light-300 hover:text-primary-500 transition-colors text-sm">
