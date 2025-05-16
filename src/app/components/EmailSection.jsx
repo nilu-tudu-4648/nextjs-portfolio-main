@@ -132,8 +132,8 @@ const EmailSection = () => {
                   </div>
                   <div>
                     <p className="text-sm text-light-300">Email</p>
-                    <a href="mailto:hello@webcraftstudios.com" className="text-white hover:text-primary-500 transition-colors">
-                      hello@webcraftstudios.com
+                    <a href="mailto:tudunilesh3@gmail.com" className="text-white hover:text-primary-500 transition-colors">
+                      tudunilesh3@gmail.com
                     </a>
                   </div>
                 </div>
@@ -147,7 +147,7 @@ const EmailSection = () => {
                   </div>
                   <div>
                     <p className="text-sm text-light-300">Location</p>
-                    <p className="text-white">Boston, MA</p>
+                    <p className="text-white">Ranchi, Jharkhand</p>
                   </div>
                 </div>
               </div>

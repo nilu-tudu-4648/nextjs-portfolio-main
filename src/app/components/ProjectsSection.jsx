@@ -7,63 +7,73 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Bloom Boutique",
-    description: "E-commerce website for a local fashion boutique with online ordering and inventory management.",
+    title: "Johar 11",
+    description: "Johar11: Fantasy sports app for team building",
     image: "/images/projects/1.png",
-    tag: ["All", "Web", "E-commerce"],
-    gitUrl: "#",
-    previewUrl: "/",
-    tech: ["React", "Node.js", "Stripe", "MongoDB"]
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/nilesh98/johar11",
+    previewUrl: "https://play.google.com/store/apps/details?id=com.nilesh98.johar11",
+    tech: ["React Native", "Node.js", "Firebase"]
   },
   {
     id: 2,
-    title: "Local Eats Cafe",
-    description: "Restaurant website with online ordering, reservation system, and menu management.",
+    title: "Gyan Sarovar Library",
+    description: "Gyan Sarovar is a user-friendly app designed for seamless library management.",
     image: "/images/projects/2.png",
-    tag: ["All", "Web", "Food"],
-    gitUrl: "#",
-    previewUrl: "/",
-    tech: ["Next.js", "Tailwind CSS", "Sanity CMS"]
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/nilesh98/johar11",
+    previewUrl: "https://play.google.com/store/apps/details?id=com.gyansarovar.app",
+    tech: ["React Native", "Node.js", "Firebase"]
   },
   {
     id: 3,
-    title: "Wellness Center",
-    description: "Appointment booking system and service showcase for a local wellness and spa center.",
+    title: "Hostel Easy",
+    description: "Hostel Easy is a user-friendly app designed for seamless hostel management.",
     image: "/images/projects/3.png",
-    tag: ["All", "Web", "Health"],
-    gitUrl: "#",
-    previewUrl: "/",
-    tech: ["React", "Node.js", "PostgreSQL", "Calendly API"]
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/nilesh98/johar11",
+    previewUrl: "https://play.google.com/store/apps/details?id=com.nilesh98.Trip_Planner",
+    tech: ["React Native", "Node.js", "Firebase"]
   },
   {
     id: 4,
-    title: "Paws & Claws",
-    description: "Pet shop e-commerce platform with subscription service for pet food and supplies.",
+    title: "Sayas",
+    description: "Sayas is a user-friendly app designed for seamless hostel management.",
     image: "/images/projects/4.png",
-    tag: ["All", "Web", "E-commerce"],
-    gitUrl: "#",
-    previewUrl: "/",
-    tech: ["React", "Firebase", "Stripe", "Redux"]
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/nilesh98/johar11",
+    previewUrl: "https://play.google.com/store/apps/details?id=com.sayas",
+    tech: ["React Native", "Node.js", "Firebase"]
   },
   {
     id: 5,
-    title: "City Plumbing",
-    description: "Service booking website for a local plumbing company with emergency request feature.",
+    title: "Painpal+",
+    description: "Painpal+ is a user-friendly app designed for seamless pain management.",
     image: "/images/projects/5.png",
-    tag: ["All", "Web", "Service"],
-    gitUrl: "#",
-    previewUrl: "/",
-    tech: ["WordPress", "WooCommerce", "Custom PHP"]
+    tag: ["All", "Mobile","Health"],
+    gitUrl: "https://github.com/nilesh98/johar11",
+    previewUrl: "https://play.google.com/store/apps/details?id=com.cogniant.painpalapp",
+    tech: ["React Native", "Node.js", "Firebase"]
   },
   {
     id: 6,
-    title: "FreshGrocer",
-    description: "Mobile app for a local grocery store with delivery tracking and loyalty program.",
+    title: "Boongg Admin App",
+    description: "Boongg Admin App is a user-friendly app designed for seamless admin management.",
     image: "/images/projects/6.png",
-    tag: ["All", "Mobile", "E-commerce"],
-    gitUrl: "#",
-    previewUrl: "/",
-    tech: ["React Native", "Firebase", "Google Maps API"]
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/nilesh98/johar11",
+    previewUrl: "https://play.google.com/store/apps/details?id=com.nilesh98.Boongg_Admin_App",
+    tech: ["React Native", "Node.js", "Firebase"]
+  },
+  {
+    id: 7,
+    title: "Inland World",
+    description: "Inland World is a user-friendly app designed for seamless admin management.",
+    image: "/images/projects/7.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/nilesh98/johar11",
+    previewUrl: "https://play.google.com/store/search?q=inland+world+logistics+pvt+ltd&c=apps",
+    tech: ["React Native", "Node.js", "Firebase"]
   },
 ];
 
