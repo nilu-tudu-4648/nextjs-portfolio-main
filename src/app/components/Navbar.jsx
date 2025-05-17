@@ -24,10 +24,10 @@ const navLinks = [
     title: "Process",
     path: "#process",
   },
-  {
-    title: "Testimonials",
-    path: "#testimonials",
-  },
+  // {
+  //   title: "Testimonials",
+  //   path: "#testimonials",
+  // },
   {
     title: "Contact",
     path: "#contact",

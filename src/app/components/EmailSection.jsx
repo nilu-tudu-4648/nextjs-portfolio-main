@@ -59,34 +59,20 @@ const EmailSection = () => {
 
     if (!validateForm()) return;
 
-    setIsSubmitting(true);
-
-    try {
-      const JSONdata = JSON.stringify(formData);
-      const endpoint = "/api/send";
-
-      const options = {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSONdata,
-      };
-
-      const response = await fetch(endpoint, options);
-
-      if (response.status === 200) {
-        setEmailSubmitted(true);
-        setFormData({ email: "", subject: "", message: "" });
-      } else {
-        // Handle error
-        console.error("Failed to send email");
-      }
-    } catch (error) {
-      console.error("Error sending email:", error);
-    } finally {
-      setIsSubmitting(false);
-    }
+    // Create mailto link with form data
+    const subject = encodeURIComponent(formData.subject);
+    const body = encodeURIComponent(formData.message);
+    const email = "tudunilesh3@gmail.com"; // Email address to send to
+    
+    // Create mailto URL
+    const mailtoUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+    
+    // Open in new tab
+    window.open(mailtoUrl, '_blank');
+    
+    // Reset form
+    setFormData({ email: "", subject: "", message: "" });
+    setEmailSubmitted(true);
   };
 
   return (

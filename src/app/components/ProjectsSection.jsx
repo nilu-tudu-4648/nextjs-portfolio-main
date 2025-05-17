@@ -85,6 +85,16 @@ const projectsData = [
     previewUrl: "https://www.renthunt.in/",
     tech: ["React", "Node.js", "Firebase"]
   },
+  {
+    id: 9,
+    title: "WebCraft",
+    description: "WebCraft is a user-friendly app designed for photography and portfolio.",
+    image: "/images/projects/9.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/nilesh98/johar11",
+    previewUrl: "https://photogallery-murex.vercel.app",
+    tech: ["React", "Node.js", "Firebase"]
+  },
 ];
 
 const ProjectsSection = () => {
@@ -138,7 +148,7 @@ const ProjectsSection = () => {
             name="Mobile"
             isSelected={tag === "Mobile"}
           />
-          <ProjectTag
+          {/* <ProjectTag
             onClick={handleTagChange}
             name="E-commerce"
             isSelected={tag === "E-commerce"}
@@ -157,7 +167,7 @@ const ProjectsSection = () => {
             onClick={handleTagChange}
             name="Health"
             isSelected={tag === "Health"}
-          />
+          /> */}
         </div>
 
         <motion.div
